@@ -45,9 +45,6 @@ const SidebarComponent: React.FC<RouteComponentProps> = (props) => {
           By logging in, I agree to the Privacy Policy <br /> and Terms of
           Service
         </Terms>
-        <h4>
-          Already have an account? <span>Sign In</span>
-        </h4>
       </div>
     </Container>
   );

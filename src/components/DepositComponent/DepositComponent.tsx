@@ -2,7 +2,6 @@ import React from 'react';
 import './DepositComponentStyles.scss';
 import Image from '../ImageComponent/ImageComponent';
 import DepositValues from '../DepositValuesComponent/DepositValuesComponent'
-import UserDetailsComponent from './UserDetailsComponent'
 
 interface DepositPropsData {
     data: TransactionsData

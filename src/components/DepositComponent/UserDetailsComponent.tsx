@@ -30,19 +30,19 @@ const UserDetails: React.FC<UserDetailsProps> = ({ details }) => {
         <Fragment>
             <div className="user-details">
                 <div>
-                    <div className="position">
+                    <div className="position" data-testid="initialDeposit">
                         <p>Initial Deposit : {details.initial_deposit}</p>
                     </div>
-                    <div className="position">
+                    <div className="position" data-testid="createdAt">
                         <p> Created At : {details.created_at}</p>
                     </div>
-                    <div className="position">
+                    <div className="position" data-testid="dateOB">
                         <p>Date of Birth : {details.profile.dateOfBirth}</p>
                     </div>
-                    <div className="position">
+                    <div className="position" data-testid="minPension">
                         <p>Desired Pension Size: {details.profile.minimumDesiredPensionSize}</p>
                     </div>
-                    <div className="position">
+                    <div className="position" data-testid="ageofRet">
                         <p>Age of Retirement : {details.profile.desiredAgeOfRetirement}</p>
                     </div>
                 </div>
