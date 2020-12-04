@@ -1,0 +1,110 @@
+.card {
+    background-color: white;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    .image-and-title {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+  
+      .title-and-location {
+        padding-top: 17px;
+  
+        .company {
+          a {
+            font-weight: 700;
+            color: var(--primary-font-color);
+            // margin-top: 0;
+          }
+          a:link {
+            text-decoration: none;
+          }
+  
+          a:hover,
+          a:focus {
+            text-decoration: underline;
+          }
+        }
+  
+        .position {
+          p {
+            color: black;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  
+    .tools-and-lang {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+  
+      div {
+        margin-right: 10px;
+        margin-top: 20px;
+        background-color: hsl(180, 52%, 96%);
+        width: 80px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        p {
+          font-size: 0.7rem;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    @media (min-width: 700px) and (max-width: 1300px) {
+      flex-direction: column;
+  
+      .tools-and-lang {
+        justify-content: flex-start;
+        padding-left: 148px;
+      }
+    }
+  
+    @media (max-width: 699px) {
+      display: block;
+  
+      .tools-and-lang {
+        flex-wrap: wrap;
+        justify-content: left;
+        padding-left: 30px;
+      }
+  
+      .image-and-title {
+        display: block;
+  
+        .title-and-location {
+          padding-left: 30px;
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+  
+  .user-details {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+  }
+  
+  .logout {
+    color: #000000;
+    margin-bottom: 20px;
+  }

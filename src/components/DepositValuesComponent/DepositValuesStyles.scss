@@ -1,0 +1,13 @@
+.location-time {
+    span {
+      padding-right: 20px;
+      color: gray;
+    }
+  
+    @media (max-width: 699px) {
+      span {
+        padding-right: 10px;
+      }
+    }
+  }
+  

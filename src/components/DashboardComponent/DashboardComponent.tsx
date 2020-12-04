@@ -4,8 +4,10 @@ import { withRouter, RouteComponentProps } from "react-router";
 
 
 import { ReactComponent as Logo } from '../Images/bg-header-desktop.svg';
-import './DashboardComponent.scss';
+import '../Styles/Styles.scss';
 import auth from '../../auth'
+import DepositComponent from '../DepositComponent/DepositComponent'
+
 
 
 
@@ -49,6 +51,7 @@ const DashboardComponent: React.FC<RouteComponentProps> = (props) => {
                 setListing(data)
             })
     }, [])
+
     return (
         <Fragment>
             <header>
@@ -62,7 +65,7 @@ const DashboardComponent: React.FC<RouteComponentProps> = (props) => {
                         });
                     }}> Logout</div>
                     {listing && listing.transactions.map((value, index) => {
-                        return <div></div>
+                        return <DepositComponent key={index} data={value} />
                     })}
                 </div>
             </main>
