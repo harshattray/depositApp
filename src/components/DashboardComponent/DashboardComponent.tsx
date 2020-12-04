@@ -61,6 +61,9 @@ const DashboardComponent: React.FC<RouteComponentProps> = (props) => {
                             props.history.push("/");
                         });
                     }}> Logout</div>
+                    {listing && listing.transactions.map((value, index) => {
+                        return <div></div>
+                    })}
                 </div>
             </main>
         </Fragment>
