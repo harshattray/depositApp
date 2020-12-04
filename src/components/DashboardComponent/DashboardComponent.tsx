@@ -7,8 +7,7 @@ import { ReactComponent as Logo } from '../Images/bg-header-desktop.svg';
 import '../Styles/Styles.scss';
 import auth from '../../auth'
 import DepositComponent from '../DepositComponent/DepositComponent'
-
-
+import UserDetailsComponent from '../DepositComponent/UserDetailsComponent';
 
 
 const DashboardComponent: React.FC<RouteComponentProps> = (props) => {
@@ -64,6 +63,7 @@ const DashboardComponent: React.FC<RouteComponentProps> = (props) => {
                             props.history.push("/");
                         });
                     }}> Logout</div>
+                    <UserDetailsComponent details={listing} />
                     {listing && listing.transactions.map((value, index) => {
                         return <DepositComponent key={index} data={value} />
                     })}
