@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InputComponent from "./InputComponent";
+import InputComponent from "../InputComponent/InputComponent";
 import { withRouter, RouteComponentProps } from "react-router";
-import auth from '../../auth';
+import auth from '../../../auth';
 import { Terms, Form, Container, LogoWrapper } from './SidebarComponentStyles'
 
 const SidebarComponent: React.FC<RouteComponentProps> = (props) => {

@@ -1,6 +1,6 @@
 import React from "react";
-import SidebarComponent from "./SidebarComponent";
-import Main from "./MainComponent";
+import SidebarComponent from "./SidebarComponent/SidebarComponent";
+import Main from "./MainComponent/MainComponent";
 import { Container, Wrapper } from './LoginComponentStyles'
 
 const LoginComponent: React.FC = () => {
